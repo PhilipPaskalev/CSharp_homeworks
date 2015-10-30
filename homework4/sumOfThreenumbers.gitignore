@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace problem_01
+{
+    class sumOfThreeNumbers
+    {
+        static void Main(string[] args)
+        {
+            /*
+             Write a program that reads 3 real numbers from the console and prints their sum. 
+             */
+            Console.WriteLine("Enter threenumbers.");
+            Console.Write("1st numbers: ");
+            decimal number1 = decimal.Parse(Console.ReadLine());
+            Console.Write("2nd numbers: ");
+            decimal number2 = decimal.Parse(Console.ReadLine());
+            Console.Write("3th numbers: ");
+            decimal number3 = decimal.Parse(Console.ReadLine());
+
+            decimal sum = number1 + number2 + number3;
+            sum = Decimal.Round(sum, 2);
+            Console.WriteLine("Sum is: {0}",sum);
+            
+        }
+    }
+}
